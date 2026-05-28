@@ -14,8 +14,8 @@ Para cumplir con los estándares de metodologías ágiles y control de versiones
 
 | Integrante | Rol Ágil / Git | Responsabilidades Principales |
 | :--- | :--- | :--- |
-| **Luca Vaccaro (lucavaccarodesktop)** (P1) | Project Leader & Integrador | Inicialización del repositorio, definición del entorno, arquitectura de carpetas, revisión de código (*Peer Review*) y aprobación final de integraciones (*Merge*). |
-| **Rosario Guadalupe Mallón (Guadaa18/Colab22)** (P2) | Data Developer | Configuración del entorno en Google Colab, desarrollo del script de análisis estadístico core, exportación de resultados y generación de gráficos de tendencias. |
+| **Luca Vaccaro (lucavaccarodesktop)** (P1) | Líder de Proyecto y Supervisor| Inicialización del repositorio, definición del entorno, arquitectura de carpetas, revisión de código (*Peer Review*) y aprobación final de integraciones (*Merge*). |
+| **Rosario Guadalupe Mallón (Guadaa18/Colab22)** (P2) | Desarrolladora del código y visualización de ejecución| Configuración del entorno en Google Colab, desarrollo del script de análisis estadístico core, exportación de resultados y generación de gráficos de tendencias. |
 
 
 ---
