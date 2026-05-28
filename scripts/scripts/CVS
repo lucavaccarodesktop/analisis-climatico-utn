@@ -1,0 +1,29 @@
+# Este código genera el dataset y lo guarda en /datos
+# Ejecutar ANTES del script de análisis
+
+import pandas as pd
+import numpy as np
+
+np.random.seed(42)
+
+fechas = pd.date_range(start="2015-01-01", end="2024-12-31", freq="MS")
+n = len(fechas)
+
+# Temperatura con variación estacional (hemisferio sur)
+mes = fechas.month
+temp_base = 14 + 8 * np.cos(2 * np.pi * (mes - 1) / 12)
+temperatura = temp_base + np.random.normal(0, 1.5, n)
+
+# Precipitaciones con ligera variación estacional
+precip_base = 50 + 20 * np.sin(2 * np.pi * mes / 12)
+precipitaciones = np.abs(precip_base + np.random.normal(0, 15, n))
+
+df = pd.DataFrame({
+    "fecha": fechas,
+    "temperatura_c": temperatura.round(1),
+    "precipitacion_mm": precipitaciones.round(1)
+})
+
+df.to_csv("datos/dataset_climatico.csv", index=False)
+print(f"Dataset guardado: {len(df)} registros")
+print(df.head()) 
