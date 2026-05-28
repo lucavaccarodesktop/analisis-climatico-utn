@@ -26,4 +26,4 @@ df = pd.DataFrame({
 
 df.to_csv("datos/dataset_climatico.csv", index=False)
 print(f"Dataset guardado: {len(df)} registros")
-print(df.head()) 
+print(df.head())
