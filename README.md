@@ -1,15 +1,15 @@
-# Sistema de Análisis de Datos Climáticos Históricos 🌦️
+# Sistema de Análisis de Datos Climáticos Históricos 
 ### Trabajo Práctico Integrador — Organización Empresarial
 **Tecnicatura Universitaria en Programación (TUP) — UTN** *Ciclo Lectivo: 2026*
 
 ---
 
-## 📄 1. Descripción del Proyecto
+##  1. Descripción del Proyecto
 Este proyecto consiste en el desarrollo de un sistema automatizado en Python para el procesamiento, análisis estadístico y visualización de series de datos climáticos históricos (período 2015-2024). El objetivo de negocio es proporcionar una herramienta ágil que permita identificar tendencias térmicas de largo plazo y anomalías en los regímenes de precipitaciones anuales para optimizar la toma de decisiones en sectores productivos dependientes del clima.
 
 ---
 
-## 👥 2. Integrantes y Roles (Simulación Scrum)
+##  2. Integrantes y Roles (Simulación Scrum)
 Para cumplir con los estándares de metodologías ágiles y control de versiones profesional, el equipo distribuyó sus responsabilidades bajo los siguientes roles:
 
 | Integrante | Rol Ágil / Git | Responsabilidades Principales |
@@ -20,7 +20,7 @@ Para cumplir con los estándares de metodologías ágiles y control de versiones
 
 ---
 
-## ⚙️ 3. Metodología y Flujo de Trabajo (Git & Jira)
+##  3. Metodología y Flujo de Trabajo (Git & Jira)
 La gestión de este proyecto se realizó bajo el marco de trabajo **Scrum**, utilizando **Jira** como herramienta centralizadora para el sprint. 
 
 ### Ciclo de Ramificación (Feature Branch Workflow)
@@ -32,7 +32,7 @@ Todos los commits realizados en Git fueron vinculados de manera estricta al tabl
 
 ---
 
-## 📂 4. Estructura del Repositorio
+## 4. Estructura del Repositorio
 El proyecto mantiene una arquitectura de archivos limpia y modular:
 
 ```text
