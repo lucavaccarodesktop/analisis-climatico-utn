@@ -1,7 +1,7 @@
 """
 Análisis de Datos Climáticos — Escenario A
 TUP UTN 2026 · Organización Empresarial
-Autores: Luca Vaccaro (lucavaccarodesktop) (P1), Rosario Guadalupe Mallón (Colab22/guadaa18) (P2)
+Autores: Luca Vaccaro (lucavaccarodesktop) (P1), Rosario Guadalupe Mallón (Colab22/guadaa18) (P2) 
 """
 
 import pandas as pd
