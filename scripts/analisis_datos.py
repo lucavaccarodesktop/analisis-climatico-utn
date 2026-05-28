@@ -42,4 +42,4 @@ plt.grid(True)
 plt.savefig("resultados/grafico_precipitaciones.png")
 plt.close()
 
-print("¡Script ejecutado internamente con éxito!")
+print("-> Script ejecutado internamente con éxito.")
