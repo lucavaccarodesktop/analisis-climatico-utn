@@ -1,48 +1,43 @@
-# Sistema de Análisis de Datos Climáticos Históricos 
-### Trabajo Práctico Integrador — Organización Empresarial
-**Tecnicatura Universitaria en Programación (TUP) — UTN** *Ciclo Lectivo: 2026*
+# Análisis de Datos Climáticos — UTN TUP 2026
 
----
+## 1. Descripción del Proyecto
 
-##  1. Descripción del Proyecto
-Este proyecto consiste en el desarrollo de un sistema automatizado en Python para el procesamiento, análisis estadístico y visualización de series de datos climáticos históricos (período 2015-2024). El objetivo de negocio es proporcionar una herramienta ágil que permita identificar tendencias térmicas de largo plazo y anomalías en los regímenes de precipitaciones anuales para optimizar la toma de decisiones en sectores productivos dependientes del clima.
+Este proyecto es parte del trabajo práctico de Organización Empresarial de la Tecnicatura en Programación (UTN). Consiste en un script de Python que procesa datos climáticos históricos del período 2015-2024, calcula indicadores básicos de temperatura y precipitaciones, y genera gráficos para visualizar cómo evolucionaron a lo largo del tiempo.
 
----
+## 2. Integrantes y Roles
 
-##  2. Integrantes y Roles (Simulación Scrum)
-Para cumplir con los estándares de metodologías ágiles y control de versiones profesional, el equipo distribuyó sus responsabilidades bajo los siguientes roles:
+| Integrante | Usuario GitHub | Rol |
+|---|---|---|
+| Luca Vaccaro | lucavaccarodesktop | P1 — Líder: creación del repo, estructura de carpetas, revisión del código y merge final |
+| Rosario Guadalupe Mallón | Guadaa18 | P2 — Desarrollo: script de análisis, gráficos y exportación de resultados en Colab |
 
-| Integrante | Rol Ágil / Git | Responsabilidades Principales |
-| :--- | :--- | :--- |
-| **Luca Vaccaro (lucavaccarodesktop)** (P1) | Líder de Proyecto y Supervisor| Inicialización del repositorio, definición del entorno, arquitectura de carpetas, revisión de código (*Peer Review*) y aprobación final de integraciones (*Merge*). |
-| **Rosario Guadalupe Mallón (Guadaa18/Colab22)** (P2) | Desarrolladora del código y visualización de ejecución| Configuración del entorno en Google Colab, desarrollo del script de análisis estadístico core, exportación de resultados y generación de gráficos de tendencias. |
+## 3. Cómo trabajamos
 
+Usamos **Jira** para organizar las tareas y **Git con GitHub** para el control de versiones. Cada commit está vinculado a un Issue de Jira con el formato `CLIM-N: descripción`.
 
----
+No trabajamos directo sobre `main`. El desarrollo se hizo en una rama separada (`feature/desarrollo-analisis`) y se integró a main mediante un Pull Request con revisión de código entre los dos.
 
-##  3. Metodología y Flujo de Trabajo (Git & Jira)
-La gestión de este proyecto se realizó bajo el marco de trabajo **Scrum**, utilizando **Jira** como herramienta centralizadora para el sprint. 
-
-### Ciclo de Ramificación (Feature Branch Workflow)
-Para el desarrollo del código no se trabajó directamente sobre la rama principal, garantizando la estabilidad del software:
-* **`main`**: Contiene únicamente versiones estables, limpias y aprobadas para producción.
-* **`feature/desarrollo-analisis`**: Rama secundaria utilizada por el equipo de desarrollo para codificar el script y generar las métricas visuales sin alterar la línea principal.
-
-Todos los commits realizados en Git fueron vinculados de manera estricta al tablero de Jira utilizando la clave del proyecto como prefijo (`CLIM-4`, `CLIM-2`, `CLIM-3`). La integración final se realizó mediante un **Pull Request (PR)**, el cual requirió debate técnico cruzado y aprobación formal previa fusión.
-
----
-
-## 4. Estructura del Repositorio
-El proyecto mantiene una arquitectura de archivos limpia y modular:
-
-```text
+## 4. Estructura del repositorio
 ├── datos/
-│   └── dataset_climatico.csv      # Dataset histórico con registros mensuales (2015-2024)
+│   └── dataset_climatico.csv       # Registros mensuales de temperatura y precipitaciones
 ├── scripts/
-│   └── analisis_datos.py          # Script principal de procesamiento y análisis en Python
+│   └── analisis_datos.py           # Script principal de análisis
 ├── resultados/
-│   ├── resumen_indicadores.csv    # Tabla con promedios, máximos y mínimos calculados
-│   ├── grafico_temperatura.png    # Visualización lineal de la tendencia térmica
-│   └── grafico_precipitaciones.png# Histograma de barras de acumulación pluvial anual
-├── .gitignore                     # Archivo de exclusión para entornos locales y temporales
-└── README.md                      # Documentación general del proyecto (este archivo)
+│   ├── resumen_indicadores.csv     # Tabla con los indicadores calculados
+│   ├── grafico_temperatura.png     # Gráfico de evolución de temperatura
+│   └── grafico_precipitaciones.png # Gráfico de precipitaciones por mes
+├── .gitignore
+└── README.md
+
+## 5. Cómo ejecutar el script
+
+1. Clonar el repositorio
+2. Abrir `scripts/analisis_datos.py` en Google Colab
+3. Ejecutar todas las celdas en orden
+4. Los resultados se guardan automáticamente en `/resultados`
+
+> Si el archivo CSV no está en `/datos`, el script genera un dataset de ejemplo para que puedas probar igual.
+
+## 6. Dataset utilizado
+
+Datos climáticos históricos obtenidos de [datahub.io/core/global-temp](https://datahub.io/core/global-temp). Registros mensuales de temperatura global en formato CSV, de acceso público.
