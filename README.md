@@ -9,7 +9,7 @@ Este proyecto es parte del trabajo práctico de Organización Empresarial de la 
 | Integrante | Usuario GitHub | Rol |
 |---|---|---|
 | Luca Vaccaro | lucavaccarodesktop | P1 — Líder: creación del repo, estructura de carpetas, revisión del código y merge final |
-| Rosario Guadalupe Mallón | Guadaa18 | P2 — Desarrollo: script de análisis, gráficos y exportación de resultados en Colab |
+| Rosario Guadalupe Mallón | Guadaa18 / Collab22| P2 — Desarrollo: script de análisis, gráficos y exportación de resultados en Colab |
 
 ## 3. Cómo trabajamos
 
